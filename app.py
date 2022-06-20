@@ -26,3 +26,5 @@ def calc():
 if __name__ == '__main__':
     print(f'Started Server')
     app.run()
+
+

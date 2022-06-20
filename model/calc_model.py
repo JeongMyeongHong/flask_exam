@@ -23,6 +23,7 @@ class CalcModel:
             w1 = graph.get_tensor_by_name('w1:0')
             w2 = graph.get_tensor_by_name('w2:0')
             feed_dict = {w1:float(num1), w2:float(num2)}
+            
             op_to_restore = graph.get_tensor_by_name('op_' + opcode + ':0')
             result = sess.run(op_to_restore, feed_dict)
             print(f'최종결과: {result}')
